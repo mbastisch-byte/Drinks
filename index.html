@@ -1,42 +1,115 @@
-t
-T
-mbastisch-byte
-mbastisch-byte
-Rename paypal-index.html to index.html
-2de818d
- · 
-40 minutes ago
-Name		
-index.html
-Rename paypal-index.html to index.html
-40 minutes ago
-Repository files navigation
-README
-Add a README
-Help people interested in this repository understand your project.
-About
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Getränke & Snacks – PayPal</title>
+<style>
+  :root { --pp-blue:#003087; --pp-light:#0070ba; --gold:#b8860b; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:#f4f6f9; color:#1a1a1a;
+    display:flex; justify-content:center; padding:20px 16px 40px;
+  }
+  .wrap { width:100%; max-width:480px; }
+  header { text-align:center; margin-bottom:8px; }
+  h1 { font-size:24px; color:var(--pp-blue); margin-bottom:2px; }
+  .sub { color:#777; font-size:13px; margin-bottom:20px; text-align:center; }
 
+  .section-title {
+    font-size:13px; font-weight:700; text-transform:uppercase;
+    letter-spacing:.5px; color:var(--gold); margin:22px 4px 10px;
+  }
+  .item {
+    display:flex; align-items:center; gap:12px;
+    background:#fff; border:1px solid #e4e8ec; border-radius:14px;
+    padding:14px 16px; margin-bottom:10px;
+    box-shadow:0 1px 2px rgba(0,0,0,.04);
+  }
+  .info { flex:1; min-width:0; }
+  .name { font-weight:600; font-size:15px; color:#1a2b4a; line-height:1.25; }
+  .vol { font-size:12px; color:#8a94a0; margin-top:1px; }
+  .price {
+    font-weight:700; font-size:15px; color:var(--pp-blue);
+    white-space:nowrap;
+  }
+  .pay {
+    display:inline-flex; align-items:center; justify-content:center;
+    background:var(--pp-blue); color:#fff; text-decoration:none;
+    font-weight:600; font-size:14px; padding:9px 16px;
+    border-radius:20px; white-space:nowrap; transition:.15s;
+  }
+  .pay:hover { background:var(--pp-light); }
+  footer { text-align:center; color:#999; font-size:12px; margin-top:24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Getränke &amp; Snacks</h1>
+  </header>
+  <p class="sub">Artikel wählen &amp; direkt per PayPal bezahlen</p>
 
-Drinks BAS
+  <div class="section-title">Getränke</div>
 
-Activity
-Stars
-0 stars
-Watchers
-0 watching
-Forks
-0 forks
-Releases
+  <div class="item">
+    <div class="info"><div class="name">Wasser still / sprudel</div><div class="vol">0,5 l</div></div>
+    <div class="price">1,00 €</div>
+    <a class="pay" href="https://www.paypal.com/ncp/payment/YPW57B7K8P9YA" target="_blank">Zahlen</a>
+  </div>
 
-No releases published
-Create a new release
-Deployments
-3
- (3)
+  <div class="item">
+    <div class="info"><div class="name">Fanta / Coca-Cola</div><div class="vol">0,33 l</div></div>
+    <div class="price">2,00 €</div>
+    <a class="pay" href="https://www.paypal.com/ncp/payment/DTZCD84HGXXSW" target="_blank">Zahlen</a>
+  </div>
 
-github-pages
-40 minutes ago
-Packages
+  <div class="item">
+    <div class="info"><div class="name">Red Bull</div><div class="vol">0,25 l</div></div>
+    <div class="price">3,00 €</div>
+    <a class="pay" href="https://www.paypal.com/ncp/payment/PP2XPW2CN5MLA" target="_blank">Zahlen</a>
+  </div>
 
-No packages published
-Publis
+  <div class="item">
+    <div class="info"><div class="name">Bier / Beer</div><div class="vol">0,5 l · Pils / Alt</div></div>
+    <div class="price">3,00 €</div>
+    <a class="pay" href="https://www.paypal.com/ncp/payment/WD4MCH7DGHJU4" target="_blank">Zahlen</a>
+  </div>
+
+  <div class="item">
+    <div class="info"><div class="name">Wein / Wine</div><div class="vol">0,187 l</div></div>
+    <div class="price">4,00 €</div>
+    <a class="pay" href="https://www.paypal.com/ncp/payment/UX9B8CBWMGW2C" target="_blank">Zahlen</a>
+  </div>
+
+  <div class="item">
+    <div class="info"><div class="name">Sekt / Sparkling Wine</div><div class="vol">0,2 l</div></div>
+    <div class="price">4,00 €</div>
+    <a class="pay" href="https://www.paypal.com/ncp/payment/TQ2FQXE5QJDZS" target="_blank">Zahlen</a>
+  </div>
+
+  <div class="section-title">Snacks</div>
+
+  <div class="item">
+    <div class="info"><div class="name">Chips Pringles</div><div class="vol">knusprig &amp; lecker</div></div>
+    <div class="price">3,00 €</div>
+    <a class="pay" href="https://www.paypal.com/ncp/payment/AYPL4RAU3SSLL" target="_blank">Zahlen</a>
+  </div>
+
+  <div class="item">
+    <div class="info"><div class="name">Haribo Goldbären</div><div class="vol">175 g</div></div>
+    <div class="price">3,00 €</div>
+    <a class="pay" href="https://www.paypal.com/ncp/payment/XXCUEQP3TDP7A" target="_blank">Zahlen</a>
+  </div>
+
+  <div class="item">
+    <div class="info"><div class="name">Cookies / Kekse</div><div class="vol">150 g</div></div>
+    <div class="price">3,00 €</div>
+    <a class="pay" href="https://www.paypal.com/ncp/payment/RTVBRSDT34XG6" target="_blank">Zahlen</a>
+  </div>
+
+  <footer>Sicher bezahlen über PayPal · Vielen Dank!</footer>
+</div>
+</body>
+</html>
